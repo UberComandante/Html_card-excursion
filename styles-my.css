@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-style: normal;
+    src: url('./fonts/fonts/OpenSans-Regular.woff2') format(woff2),
+    url("./fonts/fonts/OpenSans-Regular.woff2") format(woff);
+}
+
+@font-face {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-style: normal;
+    src: url('./fonts/fonts/OpenSans-Regular.woff2') format(woff2),
+    url("./fonts/fonts/OpenSans-Regular.woff") format(woff);
+}
+
+
+
+
+
+h1, h2, h3, h4, h5 {
+    font-size: 40px;
+}
+
+
+.navbar-list {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #000;
+    background-color: aqua;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.navbar-link:hover {
+    opacity: 0.5;
+}
+
+
+
+.page-body {
+    font-family: 'Open sans', sans-serif;
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    margin: 0;
+    line-height: 1.4;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1500px 1fr;
+}
+
+
+
+
+#home {
+    position: relative;
+    background-image: url("./images/view-1.png");
+    color: #fff;
+    height: 700px;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#home::after {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); 
+    z-index: 1; 
+}
+
+#home > h1, #home > p {
+    width: 400px;
+    display: flex;
+    justify-content: start;
+    padding: 0 0 0 150px;
+    position: relative;
+    z-index: 2;
+    padding-top: 10px;
+}
+
+
+
+
+#program {
+    padding: 0 0 0 150px;
+}
+#program > .program-flex > .young-guys img {
+    border-radius: 20px;
+}
+#program > .program-flex {
+    display: flex;
+    gap: 0 10px;
+}
+
+
+
+#audience{
+    padding: 0 0 0 150px;
+    display: grid;
+}
+
+#auditory-1, #auditory-2, #auditory-3 {
+    border-radius: 25px;
+}
+
+#audience > .auditory-img {
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#audience > div > .audience-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+}
+
+
+
+
+#prices {
+    padding: 0 0 0 150px;
+}
+
+.table {
+    font-size: 16px;
+    border-collapse: collapse;
+}
+
+.table th {
+    background-color: #a87b00;
+    color: #fff;
+    margin: 0;
+}   
+
+.table th:first-child, .table td:first-child {
+    border-radius: 15px 0 0 15px;
+}
+
+.table th:last-child, .table td:last-child {
+    border-radius: 0 15px 15px 0;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #cac6c6;
+}
+
+
+
+
+.add-services {
+    font-size: 16px;
+    padding: 0 150px;
+}
+#total-price {
+    background-color: #000;
+    color: #0cf1d3;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+#audience, #add-services {
+    background-color: #cac6c6;
+    padding: 0 0 0 150px;
+}
+
+#feedbacks {
+    padding: 0 0 0 150px;
+}
+#feedbacks > figure > img {
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+#feedbacks > figure {
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#feedbacks > figure > div {
+    margin-left: 30px;
+}
+
+
+
+#backform {
+    padding: 0 0 0 150px;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.backform-elements {
+    background-color: rgb(32, 195, 201);
+    border-radius: 10px;
+    padding: 5px;
+    width: 50%;  
+}
+
+
+
+aside {
+    padding-left: 10px;
+    background-color: #000;
+    color: aliceblue;
+}
+
+aside ul li:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+address {
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+#contacts {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: #242424;
+    color:#fff;
+    text-decoration: none;
+}
+#contacts::after {
+    content: "";
+    position: relative;
+    width: 24px;
+    height: 24px; 
+    background-image: url(./images/telegram.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#contacts:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#contacts:hover::after {
+    opacity: 0.5;
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+}
